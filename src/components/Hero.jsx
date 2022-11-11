@@ -4,7 +4,7 @@ import '../style/Hero.css'
 function Hero() {
     return <section id='hero'>
         <div className='flex-container'>
-            <img className='hero-image' src="./src/assets/image-hero-mobile.png" alt="" />
+            <img className='hero-image' src="./public/assets/image-hero-mobile.png" alt="" />
 
 
             <div className='item'>
@@ -19,10 +19,10 @@ function Hero() {
                 </div>
 
                 <div className='grid-container'>
-                    <img src="./src/assets/client-databiz.svg" alt="" />
-                    <img src="./src/assets/client-audiophile.svg" alt="" />
-                    <img src="./src/assets/client-meet.svg" alt="" />
-                    <img src="./src/assets/client-maker.svg" alt="" />
+                    <img src="./public/assets/client-databiz.svg" alt="" />
+                    <img src="./public/assets/client-audiophile.svg" alt="" />
+                    <img src="./public/assets/client-meet.svg" alt="" />
+                    <img src="./public/assets/client-maker.svg" alt="" />
                 </div>
             </div>
         </div>

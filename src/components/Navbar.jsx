@@ -33,7 +33,7 @@ function Navbar() {
                     <li><h1>snap</h1></li>
 
                     {/* HAMBURGER MENU IF MOBILE */}
-                    <li><button className='toggleNavBtn' onClick={() => { setMenuOpen(true) }}><img src="./src/assets/icon-menu.svg" alt="Hamburger menu button" /></button></li>
+                    <li><button className='toggleNavBtn' onClick={() => { setMenuOpen(true) }}><img src="./public/assets/icon-menu.svg" alt="Hamburger menu button" /></button></li>
 
                     {/* NAVBAR LINKS IF DESKTOP */}
                     {/* @TODO: make desktop links */}
@@ -43,28 +43,28 @@ function Navbar() {
                 {menuOpen && (
                     <div className='sideMenu-wrapper'>
                         <ul className='sideMenu'>
-                            <li className='closeButton-wrapper'><button className='toggleNavBtn' onClick={() => { setMenuOpen(false) }}><img src="./src/assets/icon-close-menu.svg" alt="Hamburger menu button" /></button></li>
+                            <li className='closeButton-wrapper'><button className='toggleNavBtn' onClick={() => { setMenuOpen(false) }}><img src="./public/assets/icon-close-menu.svg" alt="Hamburger menu button" /></button></li>
                             <li>
                                 <div onClick={() => { setFeaturesMenuOpen(prevValue => !prevValue) }}>Features
                                     {featuresMenuOpen ?
-                                        <img src="./src/assets/icon-arrow-up.svg" alt="Arrow pointing up" className='arrow' /> :
-                                        <img src="./src/assets/icon-arrow-down.svg" alt="Arrow pointing down" className='arrow' />}</div>
+                                        <img src="./public/assets/icon-arrow-up.svg" alt="Arrow pointing up" className='arrow' /> :
+                                        <img src="./public/assets/icon-arrow-down.svg" alt="Arrow pointing down" className='arrow' />}</div>
 
                                 {/* Submenu Features */}
                                 {featuresMenuOpen && (
                                     <ul className='submenu'>
-                                        <li><img src="./src/assets/icon-todo.svg" alt="Todo list icon" /> Todo List</li>
-                                        <li><img src="./src/assets/icon-calendar.svg" alt="Calendar icon" />Calendar</li>
-                                        <li><img src="./src/assets/icon-reminders.svg" alt="Bell icon" />Reminders</li>
-                                        <li><img src="./src/assets/icon-planning.svg" alt="Clock icon" />Planning</li>
+                                        <li><img src="./public/assets/icon-todo.svg" alt="Todo list icon" /> Todo List</li>
+                                        <li><img src="./public/assets/icon-calendar.svg" alt="Calendar icon" />Calendar</li>
+                                        <li><img src="./public/assets/icon-reminders.svg" alt="Bell icon" />Reminders</li>
+                                        <li><img src="./public/assets/icon-planning.svg" alt="Clock icon" />Planning</li>
                                     </ul>
                                 )}
                             </li>
                             <li>
                                 <div onClick={() => { setCompanyMenuOpen(prevValue => !prevValue) }}>Company
                                     {companyMenuOpen ?
-                                        <img src="./src/assets/icon-arrow-up.svg" alt="Arrow pointing up" className='arrow' /> :
-                                        <img src="./src/assets/icon-arrow-down.svg" alt="Arrow pointing down" className='arrow' />}</div>
+                                        <img src="./public/assets/icon-arrow-up.svg" alt="Arrow pointing up" className='arrow' /> :
+                                        <img src="./public/assets/icon-arrow-down.svg" alt="Arrow pointing down" className='arrow' />}</div>
 
                                 {/* Submenu Features */}
                                 {companyMenuOpen && (

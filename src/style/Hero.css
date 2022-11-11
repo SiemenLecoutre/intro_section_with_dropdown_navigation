@@ -69,7 +69,7 @@
   }
 
   .hero-image {
-    content: url('./src/assets/image-hero-desktop.png');
+    content: url('./public/assets/image-hero-desktop.png');
     order: 2;
     height: auto;
     max-width: 60vh;
